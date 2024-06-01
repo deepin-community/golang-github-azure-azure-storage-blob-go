@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
+
+# Testing does not seem to work due to required internet access
+override_dh_auto_test:

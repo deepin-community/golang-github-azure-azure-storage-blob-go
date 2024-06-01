@@ -1,5 +1,36 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-azure-azure-storage-blob-go (0.15.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream release.
+    - update Build-Depends: golang-github-azure-go-autorest-dev,
+      golang-github-azure-azure-pipeline-go-dev (>= 0.2.3),
+      golang-github-google-uuid-dev (>= 1.2.0)
+  * Standards-Version: 4.6.1
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Drew Parsons <dparsons@debian.org>  Tue, 08 Nov 2022 22:59:16 +0100
+
+golang-github-azure-azure-storage-blob-go (0.10.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Build-Depends: golang-github-google-uuid-dev (>= 1.1.1),
+                   golang-golang-x-sys-dev,
+    Versioned:     golang-github-azure-azure-pipeline-go-dev (>= 0.2.2)
+  * Standards-Version: 4.5.0
+  * debhelper compatibility level 13:
+    Build-Depends: debhelper-compat (= 13)
+
+ -- Drew Parsons <dparsons@debian.org>  Mon, 28 Sep 2020 09:26:03 +0800
+
+golang-github-azure-azure-storage-blob-go (0.3.0-1) unstable; urgency=medium
+
+  * New upstream version 0.3.0
+    - Obsolete APIs have been removed upstream
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Tue, 04 Dec 2018 23:12:00 +0100
+
+golang-github-azure-azure-storage-blob-go (0.2.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #908935)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sun, 11 Nov 2018 21:17:04 +0100

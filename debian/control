@@ -1,15 +1,29 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-azure-azure-storage-blob-go
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Dr. Tobias Quathamer <toddy@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-github-azure-azure-pipeline-go-dev (>= 0.2.3),
+               golang-github-azure-go-autorest-dev,
+               golang-github-google-uuid-dev (>= 1.2.0),
+               golang-golang-x-sys-dev,
+               golang-gopkg-check.v1-dev
+Standards-Version: 4.6.1
+Homepage: https://github.com/Azure/azure-storage-blob-go
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-azure-azure-storage-blob-go
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-azure-azure-storage-blob-go.git
+XS-Go-Import-Path: github.com/Azure/azure-storage-blob-go
+Testsuite: autopkgtest-pkg-go
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-azure-azure-storage-blob-go-dev
+Architecture: all
+Depends: ${misc:Depends},
+         golang-github-azure-azure-pipeline-go-dev,
+         golang-gopkg-check.v1-dev
+Description: Microsoft Azure Blob Storage Library for Go
+ The Microsoft Azure Storage SDK for Go allows you to build applications
+ that takes advantage of Azure's scalable cloud storage. It provides
+ low-level and high-level APIs.
